@@ -1,43 +1,248 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Jihad Mahmud</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jihad Mahmud | Official Profile</title>
 
-<style>
-body{
-background:#111;
-color:white;
-font-family:Arial;
-text-align:center;
-padding-top:100px;
-}
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
 
-img{
-width:150px;
-height:150px;
-border-radius:50%;
-border:4px solid white;
-}
+    body{
+      font-family:Arial, sans-serif;
+      background:#111827;
+      color:white;
+      min-height:100vh;
+      padding:30px;
+    }
 
-h1{
-font-size:40px;
-}
+    .container{
+      max-width:1200px;
+      margin:auto;
+    }
 
-p{
-font-size:20px;
-color:#ccc;
-}
+    .search-box{
+      background:#1f2937;
+      border-radius:20px;
+      padding:18px 25px;
+      margin-bottom:30px;
+      font-size:20px;
+      color:#9ca3af;
+      border:1px solid #374151;
+    }
 
-</style>
+    .profile-grid{
+      display:grid;
+      grid-template-columns:2fr 1fr;
+      gap:25px;
+    }
+
+    .left-section{
+      background:#1f2937;
+      border-radius:25px;
+      padding:25px;
+      border:1px solid #374151;
+    }
+
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:15px;
+      margin-bottom:25px;
+    }
+
+    .gallery img{
+      width:100%;
+      height:260px;
+      object-fit:cover;
+      border-radius:20px;
+    }
+
+    .main-profile{
+      text-align:center;
+      margin-top:10px;
+    }
+
+    .main-profile img{
+      width:180px;
+      height:180px;
+      border-radius:50%;
+      border:5px solid #00ffff;
+      object-fit:cover;
+      box-shadow:0 0 25px #00ffff;
+    }
+
+    h1{
+      font-size:48px;
+      margin-top:20px;
+    }
+
+    .subtitle{
+      color:#9ca3af;
+      font-size:20px;
+      margin-top:10px;
+    }
+
+    .about{
+      margin-top:25px;
+      line-height:1.8;
+      color:#d1d5db;
+      font-size:18px;
+    }
+
+    .socials{
+      margin-top:30px;
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:15px;
+    }
+
+    .socials a{
+      text-decoration:none;
+      color:white;
+      background:#2563eb;
+      padding:12px 25px;
+      border-radius:12px;
+      transition:0.3s;
+      font-weight:bold;
+    }
+
+    .socials a:hover{
+      background:#00ffff;
+      color:black;
+      transform:scale(1.05);
+    }
+
+    .right-section{
+      display:flex;
+      flex-direction:column;
+      gap:20px;
+    }
+
+    .info-card{
+      background:#1f2937;
+      border-radius:20px;
+      padding:25px;
+      border:1px solid #374151;
+    }
+
+    .info-card h2{
+      font-size:20px;
+      color:#9ca3af;
+      margin-bottom:10px;
+    }
+
+    .info-card p{
+      font-size:24px;
+      font-weight:bold;
+    }
+
+    .skills{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:10px;
+    }
+
+    .skill{
+      background:#374151;
+      padding:10px 15px;
+      border-radius:10px;
+    }
+
+    @media(max-width:900px){
+      .profile-grid{
+        grid-template-columns:1fr;
+      }
+
+      .gallery{
+        grid-template-columns:1fr;
+      }
+
+      h1{
+        font-size:36px;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
-<img src="https://via.placeholder.com/150">
+  <div class="container">
 
-<h1>Jihad Mahmud</h1>
+    <div class="search-box">
+      Search: Jihad Mahmud
+    </div>
 
-<p>Welcome to my personal website</p>
+    <div class="profile-grid">
+
+      <div class="left-section">
+
+        <div class="gallery">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop" alt="profile">
+
+          <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1200&auto=format&fit=crop" alt="profile">
+        </div>
+
+        <div class="main-profile">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop" alt="Jihad Mahmud">
+
+          <h1>Jihad Mahmud</h1>
+
+          <p class="subtitle">Web Developer • Creator • Student</p>
+
+          <p class="about">
+            Welcome to my official profile website. I love modern technology,
+            website design, coding, and creating stylish web experiences.
+          </p>
+
+          <div class="socials">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">YouTube</a>
+            <a href="#">GitHub</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="right-section">
+
+        <div class="info-card">
+          <h2>Age</h2>
+          <p>16 Years</p>
+        </div>
+
+        <div class="info-card">
+          <h2>Location</h2>
+          <p>Bangladesh</p>
+        </div>
+
+        <div class="info-card">
+          <h2>Skills</h2>
+
+          <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">GitHub</div>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <h2>Website</h2>
+          <p>jihadmahmud07.github.io</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
 
 </body>
 </html>
