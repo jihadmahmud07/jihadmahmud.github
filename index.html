@@ -1,248 +1,345 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jihad Mahmud | Official Profile</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MIA MD JIHAD | Portfolio</title>
 
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-    }
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 
-    body{
-      font-family:Arial, sans-serif;
-      background:#111827;
-      color:white;
-      min-height:100vh;
-      padding:30px;
-    }
+body {
+  font-family: Arial, sans-serif;
+  background: #0b1730;
+  color: white;
+  line-height: 1.7;
+}
 
-    .container{
-      max-width:1200px;
-      margin:auto;
-    }
+header {
+  background: #10264a;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
 
-    .search-box{
-      background:#1f2937;
-      border-radius:20px;
-      padding:18px 25px;
-      margin-bottom:30px;
-      font-size:20px;
-      color:#9ca3af;
-      border:1px solid #374151;
-    }
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #45d6ad;
+}
 
-    .profile-grid{
-      display:grid;
-      grid-template-columns:2fr 1fr;
-      gap:25px;
-    }
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
 
-    .left-section{
-      background:#1f2937;
-      border-radius:25px;
-      padding:25px;
-      border:1px solid #374151;
-    }
+nav a:hover {
+  color: #45d6ad;
+}
 
-    .gallery{
-      display:grid;
-      grid-template-columns:repeat(2,1fr);
-      gap:15px;
-      margin-bottom:25px;
-    }
+.hero {
+  min-height: 85vh;
+  padding: 70px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
 
-    .gallery img{
-      width:100%;
-      height:260px;
-      object-fit:cover;
-      border-radius:20px;
-    }
+.hero-text {
+  max-width: 600px;
+}
 
-    .main-profile{
-      text-align:center;
-      margin-top:10px;
-    }
+.hero h1 {
+  font-size: 55px;
+  line-height: 1.2;
+}
 
-    .main-profile img{
-      width:180px;
-      height:180px;
-      border-radius:50%;
-      border:5px solid #00ffff;
-      object-fit:cover;
-      box-shadow:0 0 25px #00ffff;
-    }
+.hero h1 span {
+  color: #45d6ad;
+}
 
-    h1{
-      font-size:48px;
-      margin-top:20px;
-    }
+.hero p {
+  color: #bdcce0;
+  margin: 20px 0;
+}
 
-    .subtitle{
-      color:#9ca3af;
-      font-size:20px;
-      margin-top:10px;
-    }
+.profile {
+  width: 320px;
+  height: 400px;
+  object-fit: cover;
+  object-position: center 35%;
+  border-radius: 25px;
+  border: 4px solid #45d6ad;
+}
 
-    .about{
-      margin-top:25px;
-      line-height:1.8;
-      color:#d1d5db;
-      font-size:18px;
-    }
+.btn {
+  display: inline-block;
+  background: #45d6ad;
+  color: #0b1730;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-    .socials{
-      margin-top:30px;
-      display:flex;
-      justify-content:center;
-      flex-wrap:wrap;
-      gap:15px;
-    }
+section {
+  padding: 75px 8%;
+}
 
-    .socials a{
-      text-decoration:none;
-      color:white;
-      background:#2563eb;
-      padding:12px 25px;
-      border-radius:12px;
-      transition:0.3s;
-      font-weight:bold;
-    }
+h2 {
+  font-size: 35px;
+  color: #45d6ad;
+  margin-bottom: 25px;
+}
 
-    .socials a:hover{
-      background:#00ffff;
-      color:black;
-      transform:scale(1.05);
-    }
+.about p {
+  max-width: 800px;
+  color: #bdcce0;
+}
 
-    .right-section{
-      display:flex;
-      flex-direction:column;
-      gap:20px;
-    }
+.skills, .projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
 
-    .info-card{
-      background:#1f2937;
-      border-radius:20px;
-      padding:25px;
-      border:1px solid #374151;
-    }
+.card {
+  background: #14294a;
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid #294568;
+}
 
-    .info-card h2{
-      font-size:20px;
-      color:#9ca3af;
-      margin-bottom:10px;
-    }
+.card h3 {
+  color: #45d6ad;
+  margin-bottom: 10px;
+}
 
-    .info-card p{
-      font-size:24px;
-      font-weight:bold;
-    }
+.card p {
+  color: #bdcce0;
+}
 
-    .skills{
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-      margin-top:10px;
-    }
+.contact a {
+  color: #45d6ad;
+  text-decoration: none;
+}
 
-    .skill{
-      background:#374151;
-      padding:10px 15px;
-      border-radius:10px;
-    }
+.contact p {
+  margin: 12px 0;
+}
 
-    @media(max-width:900px){
-      .profile-grid{
-        grid-template-columns:1fr;
-      }
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #10264a;
+  color: #bdcce0;
+}
 
-      .gallery{
-        grid-template-columns:1fr;
-      }
+@media(max-width: 750px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
 
-      h1{
-        font-size:36px;
-      }
-    }
-  </style>
+  nav a {
+    margin: 0 7px;
+    font-size: 13px;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .profile {
+    width: 250px;
+    height: 310px;
+  }
+
+  .skills, .projects {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
 </head>
+
 <body>
 
-  <div class="container">
+<header>
+  <div class="logo">JIHAD.</div>
 
-    <div class="search-box">
-      Search: Jihad Mahmud
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+
+  <div class="hero-text">
+    <p>HELLO, WELCOME TO MY WEBSITE</p>
+
+    <h1>
+      I'm MIA MD<br>
+      <span>JIHAD</span>
+    </h1>
+
+    <h3>Student | Future Software Developer</h3>
+
+    <p>
+      I am from Bangladesh and currently living
+      in Japan. I love programming, technology
+      and learning new things.
+    </p>
+
+    <a href="#contact" class="btn">Contact Me</a>
+  </div>
+
+  <img src="profile.jpg"
+       alt="MIA MD JIHAD"
+       class="profile">
+
+</section>
+
+<section class="about" id="about">
+
+  <h2>About Me</h2>
+
+  <p>
+    Hello! My name is MIA MD JIHAD.
+    I am from Bangladesh and currently
+    living in Osaka, Japan.
+
+    I am studying IT and my dream is to
+    become a professional software developer.
+
+    I enjoy teamwork, learning programming
+    and creating new things.
+  </p>
+
+  <p style="margin-top:20px">
+    🇧🇩 Bangladesh - My Homeland<br>
+    🇯🇵 Japan - My Journey
+  </p>
+
+</section>
+
+<section id="skills">
+
+  <h2>My Skills</h2>
+
+  <div class="skills">
+
+    <div class="card">
+      <h3>HTML</h3>
+      <p>Learning web page structure.</p>
     </div>
 
-    <div class="profile-grid">
+    <div class="card">
+      <h3>CSS</h3>
+      <p>Learning website design and styling.</p>
+    </div>
 
-      <div class="left-section">
-
-        <div class="gallery">
-          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop" alt="profile">
-
-          <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1200&auto=format&fit=crop" alt="profile">
-        </div>
-
-        <div class="main-profile">
-          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop" alt="Jihad Mahmud">
-
-          <h1>Jihad Mahmud</h1>
-
-          <p class="subtitle">Web Developer • Creator • Student</p>
-
-          <p class="about">
-            Welcome to my official profile website. I love modern technology,
-            website design, coding, and creating stylish web experiences.
-          </p>
-
-          <div class="socials">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">YouTube</a>
-            <a href="#">GitHub</a>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="right-section">
-
-        <div class="info-card">
-          <h2>Age</h2>
-          <p>16 Years</p>
-        </div>
-
-        <div class="info-card">
-          <h2>Location</h2>
-          <p>Bangladesh</p>
-        </div>
-
-        <div class="info-card">
-          <h2>Skills</h2>
-
-          <div class="skills">
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">GitHub</div>
-          </div>
-        </div>
-
-        <div class="info-card">
-          <h2>Website</h2>
-          <p>jihadmahmud07.github.io</p>
-        </div>
-
-      </div>
-
+    <div class="card">
+      <h3>JavaScript</h3>
+      <p>Learning interactive web development.</p>
     </div>
 
   </div>
+
+</section>
+
+<section id="projects">
+
+  <h2>My Projects</h2>
+
+  <div class="projects">
+
+    <div class="card">
+      <h3>Kitchen Timer</h3>
+      <p>A digital kitchen timer project.</p>
+    </div>
+
+    <div class="card">
+      <h3>Personal Website</h3>
+      <p>My own personal portfolio website.</p>
+    </div>
+
+    <div class="card">
+      <h3>Bhola Project</h3>
+      <p>Introducing my beautiful hometown in Bangladesh.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+  <h2>Contact Me</h2>
+
+  <p>Email:
+    <a href="mailto:c25il107.jihad@gmail.com">
+      c25il107.jihad@gmail.com
+    </a>
+  </p>
+
+  <p>GitHub:
+    <a href="https://github.com/jihadmahmud07">
+      github.com/jihadmahmud07
+    </a>
+  </p>
+
+  <p>Facebook:
+    <a href="https://www.facebook.com/muhammadjihad012">
+      Facebook Profile
+    </a>
+  </p>
+
+  <p>Instagram:
+    <a href="https://www.instagram.com/muhammad.jihad.story">
+      Instagram Profile
+    </a>
+  </p>
+
+  <p>X:
+    <a href="https://x.com/jihad_mahmud">
+      X Profile
+    </a>
+  </p>
+
+  <p>Location: Osaka, Japan 🇯🇵</p>
+
+</section>
+
+</main>
+
+<footer>
+  © 2026 MIA MD JIHAD | All Rights Reserved
+  <br>
+  Made with ❤️ in Japan
+</footer>
 
 </body>
 </html>
