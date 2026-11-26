@@ -2,344 +2,229 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MIA MD JIHAD | Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MIA MD JIHAD - Student and Future Software Developer from Bangladesh, living in Japan.">
+  <meta name="author" content="MIA MD JIHAD">
+  <meta name="theme-color" content="#071426">
 
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
+  <title>MIA MD JIHAD | Personal Portfolio</title>
 
-body {
-  font-family: Arial, sans-serif;
-  background: #0b1730;
-  color: white;
-  line-height: 1.7;
-}
-
-header {
-  background: #10264a;
-  padding: 20px 8%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: #45d6ad;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin-left: 20px;
-}
-
-nav a:hover {
-  color: #45d6ad;
-}
-
-.hero {
-  min-height: 85vh;
-  padding: 70px 8%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-}
-
-.hero-text {
-  max-width: 600px;
-}
-
-.hero h1 {
-  font-size: 55px;
-  line-height: 1.2;
-}
-
-.hero h1 span {
-  color: #45d6ad;
-}
-
-.hero p {
-  color: #bdcce0;
-  margin: 20px 0;
-}
-
-.profile {
-  width: 320px;
-  height: 400px;
-  object-fit: cover;
-  object-position: center 35%;
-  border-radius: 25px;
-  border: 4px solid #45d6ad;
-}
-
-.btn {
-  display: inline-block;
-  background: #45d6ad;
-  color: #0b1730;
-  padding: 12px 25px;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-section {
-  padding: 75px 8%;
-}
-
-h2 {
-  font-size: 35px;
-  color: #45d6ad;
-  margin-bottom: 25px;
-}
-
-.about p {
-  max-width: 800px;
-  color: #bdcce0;
-}
-
-.skills, .projects {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.card {
-  background: #14294a;
-  padding: 25px;
-  border-radius: 15px;
-  border: 1px solid #294568;
-}
-
-.card h3 {
-  color: #45d6ad;
-  margin-bottom: 10px;
-}
-
-.card p {
-  color: #bdcce0;
-}
-
-.contact a {
-  color: #45d6ad;
-  text-decoration: none;
-}
-
-.contact p {
-  margin: 12px 0;
-}
-
-footer {
-  text-align: center;
-  padding: 25px;
-  background: #10264a;
-  color: #bdcce0;
-}
-
-@media(max-width: 750px) {
-  header {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  nav a {
-    margin: 0 7px;
-    font-size: 13px;
-  }
-
-  .hero {
-    flex-direction: column-reverse;
-    text-align: center;
-  }
-
-  .hero h1 {
-    font-size: 38px;
-  }
-
-  .profile {
-    width: 250px;
-    height: 310px;
-  }
-
-  .skills, .projects {
-    grid-template-columns: 1fr;
-  }
-}
-</style>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
 
-<header>
-  <div class="logo">JIHAD.</div>
+  <canvas id="particles"></canvas>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+  <header class="header">
+    <a href="index.html" class="logo">JIHAD<span>.</span></a>
 
-<main>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#countries">My Countries</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-<section class="hero" id="home">
+    <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+  </header>
 
-  <div class="hero-text">
-    <p>HELLO, WELCOME TO MY WEBSITE</p>
+  <main>
 
-    <h1>
-      I'm MIA MD<br>
-      <span>JIHAD</span>
-    </h1>
+    <section class="hero" id="home">
 
-    <h3>Student | Future Software Developer</h3>
+      <div class="hero-text">
+        <p class="eyebrow">WELCOME TO MY PERSONAL WEBSITE</p>
 
-    <p>
-      I am from Bangladesh and currently living
-      in Japan. I love programming, technology
-      and learning new things.
-    </p>
+        <h1>
+          Hello, I'm<br>
+          <span>MIA MD JIHAD</span>
+        </h1>
 
-    <a href="#contact" class="btn">Contact Me</a>
-  </div>
+        <h2>Student | Future Software Developer</h2>
 
-<img src="IMG_3056.jpg"
-       alt="MIA MD JIHAD"
-       class="profile">
+        <p>
+          I am from Bangladesh and currently living in Osaka, Japan.
+          I love programming, technology, teamwork and learning
+          new things every day.
+        </p>
 
-</section>
+        <div class="hero-buttons">
+          <a href="#countries" class="btn">Explore My Journey</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
 
-<section class="about" id="about">
+        <div class="country-tags">
+          <span>🇧🇩 Bangladesh</span>
+          <span>🇯🇵 Japan</span>
+        </div>
+      </div>
 
-  <h2>About Me</h2>
+      <div class="hero-image">
+        <div class="image-glow"></div>
+        <img src="IMG_3056.jpg" alt="MIA MD JIHAD" class="profile">
+      </div>
 
-  <p>
-    Hello! My name is MIA MD JIHAD.
-    I am from Bangladesh and currently
-    living in Osaka, Japan.
+    </section>
 
-    I am studying IT and my dream is to
-    become a professional software developer.
+    <section class="section" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">GET TO KNOW ME</p>
+        <h2>About Me</h2>
+      </div>
 
-    I enjoy teamwork, learning programming
-    and creating new things.
-  </p>
+      <div class="glass-card about-card">
+        <p>
+          Hello! My name is MIA MD JIHAD.
+          I am from Bhola, Bangladesh, and currently living
+          in Osaka, Japan.
+        </p>
+        <p>
+          I am studying IT and my dream is to become
+          a professional software developer.
+          I enjoy teamwork, programming and creating new things.
+        </p>
+        <p>
+          My journey connects two beautiful countries:
+          Bangladesh, my homeland, and Japan, where I am
+          studying and building my future.
+        </p>
+      </div>
+    </section>
 
-  <p style="margin-top:20px">
-    🇧🇩 Bangladesh - My Homeland<br>
-    🇯🇵 Japan - My Journey
-  </p>
+    <section class="section" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">WHAT I AM LEARNING</p>
+        <h2>My Skills</h2>
+      </div>
 
-</section>
+      <div class="card-grid">
+        <article class="glass-card">
+          <div class="card-icon">🌐</div>
+          <h3>HTML</h3>
+          <p>Learning website structure and web development.</p>
+        </article>
 
-<section id="skills">
+        <article class="glass-card">
+          <div class="card-icon">🎨</div>
+          <h3>CSS</h3>
+          <p>Learning website design, layouts and animations.</p>
+        </article>
 
-  <h2>My Skills</h2>
+        <article class="glass-card">
+          <div class="card-icon">💻</div>
+          <h3>JavaScript</h3>
+          <p>Learning programming and interactive websites.</p>
+        </article>
+      </div>
+    </section>
 
-  <div class="skills">
+    <section class="section" id="countries">
+      <div class="section-heading">
+        <p class="eyebrow">TWO COUNTRIES, ONE JOURNEY</p>
+        <h2>Explore My World</h2>
+        <p>Choose a country to discover my story.</p>
+      </div>
 
-    <div class="card">
-      <h3>HTML</h3>
-      <p>Learning web page structure.</p>
-    </div>
+      <div class="country-grid">
 
-    <div class="card">
-      <h3>CSS</h3>
-      <p>Learning website design and styling.</p>
-    </div>
+        <a href="bangladesh.html" class="country-card bangladesh">
+          <div class="flag">🇧🇩</div>
+          <h3>Bangladesh</h3>
+          <p>My Homeland</p>
+          <span>Explore Bangladesh →</span>
+        </a>
 
-    <div class="card">
-      <h3>JavaScript</h3>
-      <p>Learning interactive web development.</p>
-    </div>
+        <a href="japan.html" class="country-card japan">
+          <div class="flag">🇯🇵</div>
+          <h3>Japan</h3>
+          <p>My Life & Journey</p>
+          <span>Explore Japan →</span>
+        </a>
 
-  </div>
+      </div>
+    </section>
 
-</section>
+    <section class="section" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">MY WORK</p>
+        <h2>My Projects</h2>
+      </div>
 
-<section id="projects">
+      <div class="card-grid">
+        <article class="glass-card">
+          <div class="card-icon">⏱️</div>
+          <h3>Kitchen Timer</h3>
+          <p>A digital kitchen timer created as a coding project.</p>
+        </article>
 
-  <h2>My Projects</h2>
+        <article class="glass-card">
+          <div class="card-icon">🌏</div>
+          <h3>Bhola Project</h3>
+          <p>A project introducing my beautiful hometown.</p>
+        </article>
 
-  <div class="projects">
+        <article class="glass-card">
+          <div class="card-icon">🚀</div>
+          <h3>Personal Portfolio</h3>
+          <p>My personal website and programming journey.</p>
+        </article>
+      </div>
+    </section>
 
-    <div class="card">
-      <h3>Kitchen Timer</h3>
-      <p>A digital kitchen timer project.</p>
-    </div>
+    <section class="section" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow">LET'S CONNECT</p>
+        <h2>Contact Me</h2>
+      </div>
 
-    <div class="card">
-      <h3>Personal Website</h3>
-      <p>My own personal portfolio website.</p>
-    </div>
+      <div class="glass-card contact-card">
+        <p>Email:
+          <a href="mailto:c25il107.jihad@gmail.com">
+            c25il107.jihad@gmail.com
+          </a>
+        </p>
 
-    <div class="card">
-      <h3>Bhola Project</h3>
-      <p>Introducing my beautiful hometown in Bangladesh.</p>
-    </div>
+        <p>GitHub:
+          <a href="https://github.com/jihadmahmud07" target="_blank" rel="noopener">
+            GitHub Profile
+          </a>
+        </p>
 
-  </div>
+        <p>Facebook:
+          <a href="https://www.facebook.com/muhammadjihad012" target="_blank" rel="noopener">
+            Facebook Profile
+          </a>
+        </p>
 
-</section>
+        <p>Instagram:
+          <a href="https://www.instagram.com/muhammad.jihad.story" target="_blank" rel="noopener">
+            Instagram Profile
+          </a>
+        </p>
 
-<section class="contact" id="contact">
+        <p>X:
+          <a href="https://x.com/jihad_mahmud" target="_blank" rel="noopener">
+            X Profile
+          </a>
+        </p>
 
-  <h2>Contact Me</h2>
+        <p>Location: Osaka, Japan 🇯🇵</p>
+      </div>
+    </section>
 
-  <p>Email:
-    <a href="mailto:c25il107.jihad@gmail.com">
-      c25il107.jihad@gmail.com
-    </a>
-  </p>
+  </main>
 
-  <p>GitHub:
-    <a href="https://github.com/jihadmahmud07">
-      github.com/jihadmahmud07
-    </a>
-  </p>
-
-  <p>Facebook:
-    <a href="https://www.facebook.com/muhammadjihad012">
-      Facebook Profile
-    </a>
-  </p>
-
-  <p>Instagram:
-    <a href="https://www.instagram.com/muhammad.jihad.story">
-      Instagram Profile
-    </a>
-  </p>
-
-  <p>X:
-    <a href="https://x.com/jihad_mahmud">
-      X Profile
-    </a>
-  </p>
-
-  <p>Location: Osaka, Japan 🇯🇵</p>
-
-</section>
-
-</main>
-
-<footer>
-  © 2026 MIA MD JIHAD | All Rights Reserved
-  <br>
-  Made with ❤️ in Japan
-</footer>
+  <footer>
+    <p>© 2026 MIA MD JIHAD | All Rights Reserved</p>
+    <p>Made with ❤️ in Japan</p>
+    <a href="#home">Back to Top ↑</a>
+  </footer>
 
 </body>
 </html>
+
