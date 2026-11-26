@@ -1,42 +1,72 @@
 
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Discover my homeland Bangladesh and my beautiful hometown Bhola.">
-  <title>Bangladesh | MIA MD JIHAD</title>
+  <meta name="description" content="Discover Bangladesh and my beautiful hometown Bhola.">
+  <title>バングラデシュ | MIA MD JIHAD</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
-<body>
+<body data-page="bangladesh">
 
 <canvas id="particles"></canvas>
 
 <header class="header">
   <a href="index.html" class="logo">JIHAD<span>.</span></a>
+
   <nav class="nav">
-    <a href="index.html">Home</a>
-    <a href="#story">My Story</a>
-    <a href="#bhola">My Hometown</a>
-    <a href="#culture">Culture</a>
+    <a href="index.html" data-i18n="home">ホーム</a>
+    <a href="#story" data-i18n="story">私の物語</a>
+    <a href="#bhola" data-i18n="hometown">故郷</a>
+    <a href="#culture" data-i18n="culture">文化</a>
   </nav>
-  <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+
+  <div class="header-actions">
+    <label for="languageSelect" class="language-label">🌐</label>
+    <select id="languageSelect" aria-label="Select language">
+      <option value="ja">🇯🇵 日本語</option>
+      <option value="en">🇬🇧 English</option>
+      <option value="bn">🇧🇩 বাংলা</option>
+      <option value="hi">🇮🇳 हिन्दी</option>
+      <option value="ar">🇸🇦 العربية</option>
+      <option value="zh">🇨🇳 中文</option>
+      <option value="ko">🇰🇷 한국어</option>
+      <option value="fr">🇫🇷 Français</option>
+      <option value="ne">🇳🇵 नेपाली</option>
+      <option value="vi">🇻🇳 Tiếng Việt</option>
+      <option value="si">🇱🇰 සිංහල</option>
+    </select>
+
+    <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+  </div>
 </header>
 
 <main>
 
 <section class="hero">
   <div class="hero-text">
-    <p class="eyebrow">🇧🇩 MY HOMELAND</p>
-    <h1>Beautiful <span>Bangladesh</span></h1>
-    <h2>The Country Where My Story Began</h2>
-    <p>
-      Bangladesh is my homeland. It is a country of
-      beautiful rivers, green fields, friendly people
-      and unforgettable memories.
+    <p class="eyebrow" data-i18n="eyebrow">🇧🇩 私の母国</p>
+
+    <h1 data-i18n="heroTitle">
+      美しい <span>バングラデシュ</span>
+    </h1>
+
+    <h2 data-i18n="heroSubtitle">
+      私の物語が始まった国
+    </h2>
+
+    <p data-i18n="heroDescription">
+      バングラデシュは私の故郷です。
+      美しい川、緑豊かな田園風景、
+      親切な人々、そして忘れられない思い出があります。
     </p>
-    <a href="#story" class="btn">Discover My Story</a>
+
+    <a href="#story" class="btn" data-i18n="discover">
+      私の物語を見る
+    </a>
   </div>
 
   <div class="hero-image">
@@ -47,93 +77,112 @@
 
 <section class="section" id="story">
   <div class="section-heading">
-    <p class="eyebrow">MY ROOTS</p>
-    <h2>My Homeland</h2>
+    <p class="eyebrow" data-i18n="roots">私のルーツ</p>
+    <h2 data-i18n="homeland">私の故郷</h2>
   </div>
 
   <div class="glass-card about-card">
-    <p>
-      Bangladesh is my birthplace and the country
-      that will always remain special to me.
-      Its rivers, green nature, villages and culture
-      are part of my identity and memories.
+    <p data-i18n="homelandText1">
+      バングラデシュは私の生まれた国であり、
+      私にとっていつまでも特別な場所です。
+      川、緑豊かな自然、村、そして文化は
+      私の大切な思い出の一部です。
     </p>
-    <p>
-      Even though I am living in Japan now,
-      I always remember my family, friends
-      and homeland.
+
+    <p data-i18n="homelandText2">
+      今は日本に住んでいますが、
+      家族、友達、そして故郷のことを
+      いつも思い出しています。
     </p>
   </div>
 </section>
 
 <section class="section" id="bhola">
   <div class="section-heading">
-    <p class="eyebrow">MY BEAUTIFUL HOMETOWN</p>
-    <h2>Bhola</h2>
+    <p class="eyebrow" data-i18n="beautifulHometown">
+      私の美しい故郷
+    </p>
+    <h2>Bhola - ボラ島</h2>
   </div>
 
   <div class="glass-card about-card">
-    <p>
-      Bhola is my hometown in southern Bangladesh.
-      It is the country's largest island and is
-      surrounded by the Meghna and Tetulia rivers.
+    <p data-i18n="bholaText1">
+      ボラ島はバングラデシュ南部にある私の故郷です。
+      国内最大の島で、メグナ川とテトゥリア川に
+      囲まれています。
     </p>
-    <p>
-      I remember its green fields, coconut trees,
-      boats, river views and peaceful village life.
-      These places make Bhola special to me.
+
+    <p data-i18n="bholaText2">
+      緑の田畑、ココナッツの木、船、
+      川の景色、そして静かな村の暮らしを覚えています。
+      それがボラ島を特別な場所にしています。
     </p>
-    <p>
-      I hope to visit my hometown again and enjoy
-      its beautiful nature.
+
+    <p data-i18n="bholaText3">
+      いつかまた故郷を訪れ、
+      美しい自然を楽しみたいです。
     </p>
   </div>
 </section>
 
 <section class="section" id="culture">
   <div class="section-heading">
-    <p class="eyebrow">TRADITIONS & MEMORIES</p>
-    <h2>Bangladesh Culture</h2>
+    <p class="eyebrow" data-i18n="traditions">
+      伝統と思い出
+    </p>
+    <h2 data-i18n="cultureTitle">バングラデシュの文化</h2>
   </div>
 
   <div class="card-grid">
+
     <article class="glass-card">
       <div class="card-icon">🌿</div>
-      <h3>Nature</h3>
-      <p>Green villages, rivers, fields and beautiful landscapes.</p>
+      <h3 data-i18n="nature">自然</h3>
+      <p data-i18n="natureText">
+        緑の村、川、田畑、美しい風景。
+      </p>
     </article>
 
     <article class="glass-card">
       <div class="card-icon">🍚</div>
-      <h3>Food</h3>
-      <p>Rice, fish, hilsa, shrimp and traditional Bengali dishes.</p>
+      <h3 data-i18n="food">食べ物</h3>
+      <p data-i18n="foodText">
+        ご飯、魚、ヒルサ、エビ、伝統的なベンガル料理。
+      </p>
     </article>
 
     <article class="glass-card">
       <div class="card-icon">🤝</div>
-      <h3>People</h3>
-      <p>Family, friendship, hospitality and Bengali traditions.</p>
+      <h3 data-i18n="people">人々</h3>
+      <p data-i18n="peopleText">
+        家族、友情、おもてなし、ベンガルの伝統。
+      </p>
     </article>
+
   </div>
 </section>
 
 <section class="section">
   <div class="section-heading">
-    <h2>My Two Countries</h2>
+    <h2 data-i18n="twoCountries">私の二つの国</h2>
   </div>
+
   <div class="country-grid">
+
     <a href="japan.html" class="country-card japan">
       <div class="flag">🇯🇵</div>
-      <h3>Japan</h3>
-      <p>Explore My Life in Japan</p>
-      <span>Visit Japan →</span>
+      <h3 data-i18n="japan">日本</h3>
+      <p data-i18n="japanText">日本での私の生活を見る</p>
+      <span data-i18n="visitJapan">日本を見る →</span>
     </a>
+
     <a href="index.html" class="country-card">
       <div class="flag">🏠</div>
-      <h3>Home</h3>
-      <p>Back to my portfolio</p>
-      <span>Go Home →</span>
+      <h3 data-i18n="home">ホーム</h3>
+      <p data-i18n="backHome">ポートフォリオに戻る</p>
+      <span data-i18n="goHome">ホームへ →</span>
     </a>
+
   </div>
 </section>
 
@@ -141,8 +190,8 @@
 
 <footer>
   <p>© 2026 MIA MD JIHAD</p>
-  <p>🇧🇩 Bangladesh - My Homeland</p>
-  <a href="index.html">Back to Home ↑</a>
+  <p data-i18n="footerText">🇧🇩 バングラデシュ - 私の故郷</p>
+  <a href="index.html" data-i18n="backToHome">ホームに戻る ↑</a>
 </footer>
 
 </body>
